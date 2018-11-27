@@ -15,11 +15,19 @@ public class ArrayListgithub{
 			list.add(10);
 
 		System.out.println(list);
+		System.out.println(separate(list));
 	}
 	public static ArrayList<Integer> combine(ArrayList<Integer> list, ArrayList<Integer> list2){
 		for(int i=0;i<list2.size();i++)
 			list.add(list2.get(i));
 
 		return list;
+	}
+	public static String separate(ArrayList<Integer> list){
+		String a="";
+		for(int i=0;i<list.size();i++){
+			a+=list.get(i)+", ";
+		}
+		return a;
 	}
 }
